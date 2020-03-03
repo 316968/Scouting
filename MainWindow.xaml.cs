@@ -35,9 +35,9 @@ namespace Scouting
 
         public static void getExcelFile()
         {
-            StreamWriter sw = new StreamWriter("C:/Users/Quinn!/source/repos/Scouting/Scouting/output.txt");
+            StreamWriter sw = new StreamWriter(/*file path for output txt file*/);
             Excel.Application xlApp = new Excel.Application();
-            Excel.Workbook xlWorkbook = xlApp.Workbooks.Open("C:/Users/Quinn!/source/repos/Scouting/Scouting/scouting.xlsx");
+            Excel.Workbook xlWorkbook = xlApp.Workbooks.Open(/*file path for excel file: add excel file as reference to project*/);
             Excel._Worksheet xlWorksheet = xlWorkbook.Sheets[1];
             Excel.Range xlRange = xlWorksheet.UsedRange;
 
